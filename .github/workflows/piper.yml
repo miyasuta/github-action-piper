@@ -17,4 +17,3 @@ jobs:
       uses: SAP/project-piper-action@main
       with:
         step-name: mtaBuild
-        flags: '--buildTarget=CF'
