@@ -20,4 +20,4 @@ jobs:
       uses: SAP/project-piper-action@main
       with:
         step-name: mtaBuild
-        flags: '--target=/tmp/mta-build'
+        flags: '--target=./tmp/mta-build'
