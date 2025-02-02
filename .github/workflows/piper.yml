@@ -20,4 +20,6 @@ jobs:
       uses: SAP/project-piper-action@main
       with:
         step-name: mtaBuild
-        flags: '--target=./tmp/mta-build'
+      env:
+        PIPER_docker: "true"
+        PIPER_dockerConfig: '{"user": "0"}'  # rootユーザーで実行
