@@ -13,13 +13,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Debug permissions
-      run: |
-        ls -l
-        whoami
-        echo "Checking working directory permissions"
-        ls -l /home/runner/work/github-action-piper/github-action-piper
-
     - name: Build
       uses: SAP/project-piper-action@main
       with:
