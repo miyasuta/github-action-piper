@@ -20,3 +20,5 @@ jobs:
       uses: SAP/project-piper-action@main
       with:
         step-name: mtaBuild
+      env:
+        PIPER_dockerConfig: '{"user": "root"}'  
